@@ -57,6 +57,9 @@ sub _terms {
     elsif ( 'end' eq $option ) {
         @filtered_assets = grep { $_->$col =~ m/$query$/ } @assets;
     }
+    elsif ( 'equal' eq $option ) {
+        @filtered_assets = grep { $_->$col =~ m/^$query$/ } @assets;
+    }
 
     if ( !@filtered_assets ) {
         return +{ id => \'IS NULL' };
