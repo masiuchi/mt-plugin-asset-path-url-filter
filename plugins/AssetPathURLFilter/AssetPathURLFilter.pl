@@ -7,7 +7,7 @@ use base qw( MT::Plugin );
 
 my $plugin = __PACKAGE__->new(
     {   name        => 'AssetPathURLFilter',
-        version     => 0.01,
+        version     => 0.02,
         author_name => 'Masahiro Iuchi',
         author_link => 'https://github.com/masiuchi',
         plugin_link =>
